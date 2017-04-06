@@ -1,4 +1,6 @@
-学习emacs的好网站:
+emacs配置采用 zharmand/emacs.d forked from redguardtoo/emacs.d
+
+学习emacs的网站:
 https://tuhdo.github.io/emacs-tutor.html#orgheadline10
 
 *Opening files
