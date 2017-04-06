@@ -13,3 +13,18 @@ https://tuhdo.github.io/emacs-tutor.html#orgheadline10
 *禁用了emacs启动进入evil-mode的状态
     修改evil-default-state的数值: normal->emacs
 
+*进入拼音输入模式后,会自动进入evil-mode,需要修改
+    修改init-chinese-pyim.el line 12~22,注释这几行
+       ;; ((and (boundp 'evil-mode) evil-mode)
+   ;;  ;; evil-mode
+   ;;  (cond
+   ;;   ((eq evil-state 'insert)
+   ;;    (toggle-input-method))
+   ;;   (t
+   ;;    (evil-insert-state)
+   ;;    (unless current-input-method
+   ;;      (toggle-input-method))
+   ;;    ))
+    ;; (if current-input-method (message "IME on!")))
+    具体含意不清楚,留待以后研究
+    
