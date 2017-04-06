@@ -1,0 +1,15 @@
+学习emacs的好网站:
+https://tuhdo.github.io/emacs-tutor.html#orgheadline10
+
+*Opening files
+打开frame文字对应的地址: M-x ffap
+
+*Ido mode
+     M-x ido
+
+*Auto-save mode 在哪里设定的?
+     init-misc.el
+
+*禁用了emacs启动进入evil-mode的状态
+    修改evil-default-state的数值: normal->emacs
+
