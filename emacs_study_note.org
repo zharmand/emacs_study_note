@@ -56,7 +56,15 @@ C-x z to repeat previous command
 
 *宏
 C-x C-k C-v 可以浏览宏列表
-
+C-x C-k C-f 定义插入宏计数的格式
+F3开始纪录宏
+F4结束纪录宏,运行宏
+(F3时再输入F3就会输出宏计数的格式)
+- insert 0 of 5:
+- insert 1 of 5:
+- insert 2 of 5:
+- insert 3 of 5:
+- insert 4 of 5:
 
 
 
