@@ -6,11 +6,11 @@ https://tuhdo.github.io/emacs-tutor.html#orgheadline10
 *Opening files
 打开frame文字对应的地址: M-x ffap
 
-*Ido mode
-     M-x ido
-
 *Auto-save mode 在哪里设定的?
      init-misc.el
+
+*Ido mode
+     M-x ido
 
 *禁用了emacs启动进入evil-mode的状态
     修改evil-default-state的数值: normal->emacs
@@ -29,4 +29,44 @@ https://tuhdo.github.io/emacs-tutor.html#orgheadline10
    ;;    ))
     ;; (if current-input-method (message "IME on!")))
     具体含意不清楚,留待以后研究
-    
+
+*如果git pull合并失败,可能会影响当前的emacs.d的配置,用下面的命令清除merge的内容
+
+     -git reset --merge
+
+     或清除conflict完成pull(中的merge操作)
+
+*禁用evil模式
+  Disable Vim key bindings
+
+  By default EVIL (Vim emulation in Emacs) is used. Comment out line containing (require 'init-evil) in init.el to unload it.
+
+*Occor模式
+M-s o 列出所有符合的搜索结果
+C-o 可以打开对应的位置
+M-g n 跳转至下个位置
+M-g p 跳转至上个位置
+C-x z to repeat previous command
+
+*Useful built-in key bindings for navigating pairs
+1) C-M-f binds to forward-sexp, move forward over a balanced expression. 
+2) C-M-b binds to backward-sexp, move backward over a balanced expression. 
+3) C-M-k binds to kill-sexp, kill balanced expression forward. 
+4) C-M-t binds to transpose-sexps, transpose expressions. 
+
+*宏
+C-x C-k C-v 可以浏览宏列表
+
+
+
+
+
+
+
+
+
+
+
+
+
+
